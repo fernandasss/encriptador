@@ -29,7 +29,7 @@ function btnDesencriptar (){
 }
 
 function desencriptar (fraseDesencriptada){
-    for (let i=0; i < codigoMatriz.length; i++){
+    for (let i = codigoMatriz.length - 1; i >= 0; i--){
         if(fraseDesencriptada.includes (codigoMatriz[i][1])){
             fraseDesencriptada=fraseDesencriptada.replaceAll(
                 codigoMatriz [i][1],

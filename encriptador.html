@@ -13,20 +13,24 @@
     <body>
         <main>
             <section>
-                <p>No se aceptan mayúsculas ni caracteres especiales.</p>
-                <textarea class="textoaEncriptar" placeholder="Escriba aquí el texto a encriptar."></textarea>
+                <textarea class="textoaEncriptar" cols="50" placeholder="Escriba aquí el texto a encriptar."></textarea>
                 <div>
-                    <button class= "btnEncriptar" onclick = btnEncriptar()>Encriptar</button>
+                    <h6>*Sólo letras minúsculas y sin acentos.</h6>
+                </div>
+                <div class="botones">
+                    <button class= "btnEncriptar"  onclick = btnEncriptar()>Encriptar</button>
                     <button class= "btnDesencriptar" onclick = btnDesencriptar()>Desencriptar</button>
                 </div>
             </section>
             <section>
-                <textarea class="textoEncriptado"></textarea>
-                <button class="btnCopiar" onclick=copiar()>Copiar</button>
+                <textarea class="textoEncriptado" cols="50"></textarea>
+                <div>
+                    <button class="btnCopiar" onclick=copiar()>Copiar</button>
+                </div>
             </section>
         </main>
         <footer>
-            <p>Este encriptador fue creado y diseñado por Fernanda el año 2024</p>
+            <h6>Este encriptador fue creado y diseñado por Fernanda el año 2024</h6>
         </footer>
         <script src="script.js"></script>
     </body>
